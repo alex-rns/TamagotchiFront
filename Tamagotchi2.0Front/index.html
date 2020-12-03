@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tamagotchi minion</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <span><%= get('pet_name')  %></span>
+  <span><%= get('warning_txt')  %></span>
+</header>
+<main>
+  <section>
+    <ul>
+      <li>Life: <strong>3</strong></li>
+      <li>Age: <strong>100</strong></li>
+      <li>Mood: <strong>100%</strong></li>
+      <li>Hunger: <strong>0%</strong></li>
+      <li>Sleep: <strong>0%</strong></li>
+      <li>WC: <strong>50%</strong></li>
+      <li>Study: <strong>100</strong></li>
+    </ul>
+  </section>
+  <article>
+    <div>
+      <p><%= get('text') %></p>
+    </div>
+    <div>
+      <p><%= get('minion_txt') %></p>
+    </div>
+  </article>
+  <aside>
+    <p>&#x1F4A9;</p>
+    <div>
+      &#x1F4A9;
+    </div>
+  </aside>
+</main>
+<footer>
+  <form action="/action_of_button" method="get">
+    <button type="submit" class="btn btn-outline-info" name="feed" value="feed">
+      <span></span><span></span><span></span><span></span>Feed</button>
+    <button type="submit" name="sleep" value="sleep">
+      <span></span><span></span><span></span><span></span>Sleep</button>
+    <button type="submit" name="wc" value="wc">
+      <span></span><span></span><span></span><span></span>WC</button>
+    <button type="submit" name="walk" value="walk">
+      <span></span><span></span><span></span><span></span>Walk</button>
+    <button type="submit" name="clean" value="clean">
+      <span></span><span></span><span></span><span></span>Clean</button>
+    <button type="submit" name="teach" value="teach">
+      <span></span><span></span><span></span><span></span>Teach</button>
+    <button type="submit" name="super" value="super">
+      <span></span><span></span><span></span><span></span>Super skill</button>
+    <button type="submit" name="play" value="play">
+      <span></span><span></span><span></span><span></span>Play</button>
+  </form>
+</footer>
+</body>
+</html>

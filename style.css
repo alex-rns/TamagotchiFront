@@ -19,7 +19,7 @@ header {
   text-align: center;
   font-weight: bold; }
   header span:last-child {
-    color: #b80000; }
+    color: red; }
 
 main {
   display: flex;
